@@ -1,3 +1,8 @@
+# Copyright (c) 2021 Chris Pollard and Philipp Windischhofer
+# an implementation of the partially convex neural networks
+# introduced in https://arxiv.org/abs/1609.07152
+
+
 import torch
 import numpy as np
 
@@ -19,7 +24,6 @@ def bias(x):
     return ps
 
 
-# see details at https://arxiv.org/abs/1609.07152
 class PICNN(torch.nn.Module):
 
     def __init__(self
